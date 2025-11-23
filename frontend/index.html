@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Assistant — Gemini + Speech</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="static/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header><h1>AI Assistant — Gemini + Speech</h1></header>
+    <main>
+      <div id="conversation" class="conversation"></div>
+      <form id="chat-form" autocomplete="off">
+        <input id="text-input" placeholder="Type your message..." />
+        <button id="send-btn" type="submit">Send</button>
+        <button id="voice-btn" type="button" title="Start/Stop voice input">🎤</button>
+        <button id="reset-btn" type="button" title="Reset session">Reset</button>
+      </form>
+      <div id="status" class="status"></div>
+    </main>
+    <footer>Built with Gemini API • Uses browser SpeechRecognition & speechSynthesis</footer>
+  </div>
+  <script src="static/js/app.js"></script>
+</body>
+</html>
