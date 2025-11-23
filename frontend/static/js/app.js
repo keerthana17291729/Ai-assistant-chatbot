@@ -63,7 +63,7 @@ async function sendMessage(msg){
   input.value = "";
   statusEl.textContent = "Thinking...";
   try {
-    const res = await fetch("http://localhost:9080/api/chat", {
+    const res = await fetch("https://ai-assistant-backend-l6z2.onrender.com/api/chat", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({ session_id: sessionId, message: msg })
@@ -124,7 +124,7 @@ resetBtn.addEventListener("click", async ()=>{
     return;
   }
   try {
-    const res = await fetch("http://localhost:9080/api/reset", {
+    const res = await fetch("https://ai-assistant-backend-l6z2.onrender.com/api/reset", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body: JSON.stringify({ session_id: sessionId })
